@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="dangnhap.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng nhập</title>
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #cdffcd;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .signin {
+    width: 500px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+  }
+
+  .login {
+    width: 500px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /*ê hình như sai sai rồi
+    sao trông lại ngu ngu thé này ._.
+    m sửa css của mấy cái input đi
+    rồi như nào nữa
+    rồi thế là xong css ?
+    ủa
+    ok chỉnh đi*/
+</style>
+
+<body>
+
+  <!-- <form action="" method="POST" onsubmit="return validate()">
+    <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <rect x="0" y="0" width="900" height="600" fill="#001220"></rect>
+      <path id="1"
+        d="M0 442L21.5 429.5C43 417 86 392 128.8 392.8C171.7 393.7 214.3 420.3 257.2 429.3C300 438.3 343 429.7 385.8 423.8C428.7 418 471.3 415 514.2 412C557 409 600 406 642.8 410.5C685.7 415 728.3 427 771.2 426.8C814 426.7 857 414.3 878.5 408.2L900 402L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+        fill="#fa7268"></path>
+  
+      <path id="2"
+        d="M0 373L21.5 374.3C43 375.7 86 378.3 128.8 378.7C171.7 379 214.3 377 257.2 387.5C300 398 343 421 385.8 421.7C428.7 422.3 471.3 400.7 514.2 386.3C557 372 600 365 642.8 364.2C685.7 363.3 728.3 368.7 771.2 381.7C814 394.7 857 415.3 878.5 425.7L900 436L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
+        fill="#fa7268"></path>
+    </svg> -->
+
+    <div class="signin">
+      <h1>Đăng nhập</h1>
+      <p>Vui lòng điền thông tin để đăng nhập</p>
+      <hr>
+      <label for="username"><b>Tên đăng nhập</b></label>
+      <input type="text" placeholder="username" name="username" id="username">
+      <label for="password"><b>Mật khẩu</b></label>
+      <input type="password" placeholder="password" name="password" id="password">
+      <hr>
+      <button type="submit" class="submit">Đăng nhập</button>
+    </div>
+    <div class="signin login">
+      <p>Bạn chưa có tài khoản ? <a href="./signup.html">Đăng ký</a>.</p>
+    </div>
+  </form>
+
+  <script>
+    const tween = KUTE.fromTo (
+      '#1',
+      { path: '#1'},
+      { path: '#2'},
+      { repeat : 900, duration: 3000, yoyo:true}
+    )
+
+    tween.start()
+  </script>
+</body>
+
+</html>
